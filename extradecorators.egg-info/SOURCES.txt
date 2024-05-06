@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+ExtraDecorators/__init__.py
+ExtraDecorators/private.py
+ExtraDecorators/read_only.py
+ExtraDecorators/restoreAttributeTypeIntegrity.py
+ExtraDecorators/validatetyping.py
+extradecorators.egg-info/PKG-INFO
+extradecorators.egg-info/SOURCES.txt
+extradecorators.egg-info/dependency_links.txt
+extradecorators.egg-info/top_level.txt

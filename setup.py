@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='extradecorators',
-    version='0.1',
+    version='0.3',
     packages=find_packages(),
     description='A package that contains some useful decorators for any case.',
     long_description=open('README.md').read(),

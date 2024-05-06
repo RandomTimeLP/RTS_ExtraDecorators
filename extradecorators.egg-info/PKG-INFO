@@ -1,3 +1,22 @@
+Metadata-Version: 2.1
+Name: extradecorators
+Version: 0.3
+Summary: A package that contains some useful decorators for any case.
+Home-page: UNKNOWN
+Author: RandomTimeTV
+Author-email: dergepanzerte1@gmail.com
+License: MIT with required credit to the author.
+Keywords: Decorators
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
 # ExtraDecorators
 This module introduces some handy decorators like @validatetyping. 
 
@@ -66,3 +85,4 @@ cla = Example(channelobject=channelobject)
 In summery @read_only ensures that you cant just so modify the attributes from outside the class (decorators are an exeption, they can [at least in some cases] still modify the attributes with very little restriction), but still be able to read and compare their values.
 
 And @restoreAtributeTypeIntegrity ensures that, either the incomming value does get changed to the annotated type or it raising an AttributeError if it was unable to restore the type. If type is any or unset it skips the validation process for this atribute.
+
