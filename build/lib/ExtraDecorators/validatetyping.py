@@ -12,7 +12,7 @@ def validatetyping(func):
         for name, value in bound_values.items():
             expected_type = params[name].annotation
             if expected_type is not inspect._empty and not isinstance(value, expected_type):
-                raise ValueError(f"Value {value} is not of {expected_type}")
+                raise TypeError(f"Value {value} is not of {expected_type}")
 
         return func(*args, **kwargs)
     return wrapper
