@@ -1,31 +1,18 @@
-from ExtraDecorators.validateInputTyping import validatetyping
-from ExtraDecorators.read_only import read_only
-from ExtraDecorators.restoreAttributeTypeIntegrity import restoreAttributeTypeIntegrity
+from ExtraDecorators.validateInputTyping import validateInputTyping
 
 class Example:
     viewercount:int 
     channelDisplayName:str
-    @validatetyping
+    @validateInputTyping
     def __init__(self,channelobject:dict):
         
         self.viewercount = channelobject.get('viewercount')
         self.channelDisplayName = channelobject.get('channelDisplayName')
         self.profileImage = channelobject.get("image")
     
-    @read_only
-    def __setattr__(self, name, value) -> None:
 
-        @restoreAttributeTypeIntegrity
-        def prepvalid(self,name, value):
-            result = (name, value)
 
-            return result
-
-        nam, val = prepvalid(self, name, value)
-        print(type(val))
-        super().__setattr__(nam, val)
-
-    @validatetyping #from above to ensure there is only a string entered
+    @validateInputTyping #from above to ensure there is only a string entered
     def setChannelDisplayname(self, name:str):
         #do some fancy api stuff
         # and get, for some reason an int as channelDisplayname back
