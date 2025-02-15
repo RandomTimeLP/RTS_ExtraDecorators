@@ -2,7 +2,7 @@ import inspect
 from functools import wraps
 
 
-def validatetyping(func):
+def validateInputTyping(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         sig = inspect.signature(func)

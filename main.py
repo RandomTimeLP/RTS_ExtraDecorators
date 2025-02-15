@@ -1,4 +1,4 @@
-from ExtraDecorators.validatetyping import validatetyping
+from ExtraDecorators.validateInputTyping import validatetyping
 from ExtraDecorators.read_only import read_only
 from ExtraDecorators.restoreAttributeTypeIntegrity import restoreAttributeTypeIntegrity
 

@@ -1,4 +1,4 @@
 from .private import private
 from .read_only import read_only
-from .validatetyping import validatetyping
+from .validateInputTyping import validateInputTyping
 from .restoreAttributeTypeIntegrity import restoreAttributeTypeIntegrity
